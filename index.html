@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Web Project </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <!-- <h1> My first project </h1> -->
+    <div id="buttons">
+      <button id="myfirstbutton"> 
+        My first button 
+      </button>
+      <button id="addTextFile">
+        Add Text File
+      </button>
+    </div>
+
+    <div id="divbreadcrumb">
+      <a href="#" class="path root" fid="-1">     
+        Root  
+      </a>
+    </div>
+
+    <div id="container"> 
+      <!-- Placeholder for the template folders.--> 
+    </div>
+
+    <div id="app">
+      <!-- To show apps. -->
+      <div id="app-title-bar">
+        <div id="app-title"> title will come here. </div>
+        <div id="win-actions">
+          <span class="material-icons"> maximize </span>
+          <span class="material-icons"> fullscreen </span>
+          <span class="material-icons"> close </span>
+        </div>
+      </div>
+      <div id="app-menu-bar"> </div>
+      <div id="app-body"> </div>
+    </div>
+
+    <template id="myTemplates">
+      <!-- A template folder -->
+      <div class="folder" rid="" pid="">
+        <span action="edit">edit</span>
+        <span action="delete">delete</span>
+        <span action="view">view </span> 
+        <span purpose="filename"></span>
+      </div>
+
+      <!-- Text File template -->
+      <div class="text-file" rid="" pid="">
+        <span action="edit">edit</span>
+        <span action="delete">delete</span>
+        <span action="view">view </span> 
+        <span purpose="filename"></span>
+      </div>
+
+      <!-- A template link -->
+      <a href="#" class="path"></a>
+
+      <!-- App's menubar template -->
+      <div purpose="notepad-menu" class="notepad-menu"> 
+        <span action="save" class="material-icons"> save </span>
+        <span action="save" class="material-icons"> format_bold </span>
+        <span action="save" class="material-icons"> format_italic </span>
+        <span action="save" class="material-icons"> format_underline </span>
+        <input type="color" purpose="bg-color" />
+        <input type="color" purpose="fg-color" />
+        <select action="font-family">
+          <option value="monospace"> Monospace </option>
+          <option value="serif"> serif </option>
+          <option value="sans-serif"> sans-serif </option>
+          <option value="cursive"> cursive </option>
+        </select>
+        <select action="font-size">
+          <option value="8"> 8 </option>
+          <option value="10"> 10 </option>
+          <option value="12"> 12 </option>
+          <option value="14"> 14 </option>
+          <option value="16"> 16 </option>
+          <option value="18"> 18 </option>
+          <option value="20"> 20 </option>
+          <option value="22"> 22 </option>
+        </select>
+      </div>
+
+      <!-- App's body template -->
+      <div purpose="notepad-body" class="notepad-body"> 
+        <textarea>
+          I am notepad body.
+        </textarea>
+      </div>
+
+    </template>
+    <script type="text/javascript" src="main2.js"/>
+  </body>
+</html>
