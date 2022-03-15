@@ -1,0 +1,184 @@
+* {
+  padding : 0;
+  margin : 0;
+}
+
+body {
+  font-family : sans-serif;
+  color : #777;
+  font-size : 12px;
+}
+
+h1 {
+  font-family : sans-serif;
+  color : red;
+  text-transform : uppercase;
+  text-align : center;
+}
+
+#buttons{
+  border : 1px solid green;
+  margin-bottom : 10px;
+  display : flex;
+  justify-content : center;
+  padding : 10px;
+}
+
+#myfirstbutton, #addTextFile {
+  border-radius : 5%;
+  padding : 6px 12px;
+  background-color: azure;
+  cursor : pointer;
+  /* margin-left : 500px; */
+  margin-right : 10px;
+  width : 250px;
+}
+
+#myfirstbutton:hover, #addTextFile:hover {
+  transform : scale(1.1);
+}
+
+#divbreadcrumb{
+  border : 1px solid orange;
+  padding : 10px;
+  margin : 10px 0;
+  display : flex;
+}
+
+.path:link, .path:visited {
+  cursor: pointer;
+  background-color : #aaa;
+  color : #fff;
+  padding : 5px;
+  text-decoration : none;
+  border-right : 3px solid #000;
+}
+
+.path:hover, .path:active {
+  background-color : #f7f7f7;
+  color : black;
+}
+
+#container {
+  border : 1px solid orangered;
+  padding : 10px;
+  margin-top : 10px;
+  margin-bottom : 50px;
+  display : flex;
+  background-color : #f7f7f7;
+}
+
+.folder {
+  background-color : #e9886a;
+  border-radius : 5%;
+  padding : 5px;
+  margin: 10px 15px;
+  width : 120px;
+  height : 120px;
+  color : #fff;
+}
+
+.folder [action] {
+  text-decoration : underline solid #f7f7f7;
+  cursor : pointer;
+}
+
+.folder [purpose] {
+  text-align : center;
+  margin-top : 70px;
+  color : #333;
+}
+
+.text-file {
+  background-color : burlywood;
+  border-radius : 5%;
+  padding : 5px;
+  margin: 10px 15px;
+  width : 120px;
+  height : 120px;
+  color : #fff;
+}
+
+.text-file [action] {
+  text-decoration : underline solid #f7f7f7;
+  cursor : pointer;
+}
+
+.text-file [purpose] {
+  text-align : center;
+  margin-top : 70px;
+  color : #333;
+}
+
+/* Apps */
+
+#app {
+  border : 5px solid orange;
+  margin : 10px;
+}
+
+#app-title-bar {
+  display : flex;
+  background-color : cyan;
+  height : 40px;
+}
+
+#app-title {
+  text-align : center;
+  width : 90%;
+  border-right : 5px solid red;
+}
+
+#app-menu-bar {
+  display : flex;
+  height : 50px;
+  background-color : teal;
+}
+
+.notepad-menu {
+  width : 100%;
+  padding : 5px;
+}
+
+.notepad-menu * {
+  margin : 0 5px;
+  cursor : pointer;
+}
+
+.notepad-menu span {
+  vertical-align : bottom;
+  background-color: transparent;
+  border : 2px solid white;
+  border-radius : 5px;
+}
+
+.notepad-menu span:hover {
+  background-color: black;
+  border : 2px solid black;
+  color : teal;
+}
+
+.notepad-menu input[type=color] {
+  width : 30px;
+}
+
+#app-body {
+  display : flex;
+  background-color : springgreen;
+  height : 500px;
+}
+
+.notepad-menu {
+  color : white;
+}
+
+.notepad-body {
+  height : 100%;
+  width : 100%;
+}
+
+.notepad-body textarea {
+  height : 100%;
+  width : 100%;
+}
+
